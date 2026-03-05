@@ -25,7 +25,21 @@
   margin-top: 20px;
 }
 
+.middle-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 .bottom-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.final-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -37,7 +51,12 @@
     grid-template-columns: 1fr;
   }
   
+  .middle-section,
   .bottom-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .final-section {
     grid-template-columns: 1fr;
   }
 }

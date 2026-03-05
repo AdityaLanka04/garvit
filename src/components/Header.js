@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ onExport, onOpenSettings }) => {
   const [countdown, setCountdown] = useState(30);
 
   useEffect(() => {
@@ -26,12 +26,12 @@ const Header = () => {
           </div>
         </div>
         <div className="header-actions">
-          <button className="btn-export">Export Report</button>
+          <button className="btn-export" onClick={onExport}>Export Report</button>
           <button className="btn-live">
             <span className="live-dot"></span>
             LIVE · Refresh in {countdown}s
           </button>
-          <button className="btn-settings">Settings</button>
+          <button className="btn-settings" onClick={onOpenSettings}>Settings</button>
         </div>
       </div>
     </header>

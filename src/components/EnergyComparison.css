@@ -1,0 +1,52 @@
+.comparison-container {
+  background: linear-gradient(135deg, #1a1a1a 0%, #151515 100%);
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.comparison-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.comparison-header h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.comparison-legend {
+  display: flex;
+  gap: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #888;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.legend-dot.current {
+  background-color: #3b82f6;
+}
+
+.legend-dot.previous {
+  background-color: #6366f1;
+}
+
+.legend-dot.target {
+  background-color: #22c55e;
+}

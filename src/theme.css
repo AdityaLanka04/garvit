@@ -1,0 +1,270 @@
+/* Light Mode Theme */
+body[data-theme="light"] {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+/* Header */
+body[data-theme="light"] .header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+body[data-theme="light"] .header h1,
+body[data-theme="light"] .subtitle {
+  color: #1a1a1a;
+}
+
+body[data-theme="light"] .subtitle {
+  color: #666;
+}
+
+body[data-theme="light"] .btn-live,
+body[data-theme="light"] .btn-settings {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  color: #666;
+}
+
+body[data-theme="light"] .btn-live:hover,
+body[data-theme="light"] .btn-settings:hover {
+  background-color: #e8e8e8;
+  color: #1a1a1a;
+}
+
+/* Metric Cards */
+body[data-theme="light"] .metric-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border: 1px solid #e0e0e0;
+}
+
+body[data-theme="light"] .metric-card:hover {
+  border-color: #d0d0d0;
+}
+
+body[data-theme="light"] .metric-label {
+  color: #666;
+}
+
+body[data-theme="light"] .metric-value {
+  background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body[data-theme="light"] .metric-sublabel {
+  color: #888;
+}
+
+/* Charts and Containers */
+body[data-theme="light"] .chart-container,
+body[data-theme="light"] .alerts-container,
+body[data-theme="light"] .insights-container,
+body[data-theme="light"] .waste-rooms-container,
+body[data-theme="light"] .lab-monitor-container,
+body[data-theme="light"] .comparison-container,
+body[data-theme="light"] .device-status-container,
+body[data-theme="light"] .historical-container,
+body[data-theme="light"] .cost-analysis-container {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border: 1px solid #e0e0e0;
+}
+
+body[data-theme="light"] .chart-header h3,
+body[data-theme="light"] .alerts-header h3,
+body[data-theme="light"] .insights-header h3,
+body[data-theme="light"] .waste-header h3,
+body[data-theme="light"] .lab-header h3,
+body[data-theme="light"] .comparison-header h3,
+body[data-theme="light"] .device-header h3,
+body[data-theme="light"] .historical-header h3,
+body[data-theme="light"] .cost-header h3 {
+  color: #1a1a1a;
+}
+
+/* Alert Items */
+body[data-theme="light"] .alert-item {
+  background-color: rgba(239, 68, 68, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+body[data-theme="light"] .alert-title {
+  color: #ea580c;
+}
+
+body[data-theme="light"] .alert-message {
+  color: #666;
+}
+
+body[data-theme="light"] .alert-time {
+  color: #888;
+}
+
+/* Insight Items */
+body[data-theme="light"] .insight-item,
+body[data-theme="light"] .room-item,
+body[data-theme="light"] .lab-section,
+body[data-theme="light"] .device-item,
+body[data-theme="light"] .cost-item {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+
+body[data-theme="light"] .insight-label,
+body[data-theme="light"] .cost-label {
+  color: #888;
+}
+
+body[data-theme="light"] .insight-value,
+body[data-theme="light"] .room-name,
+body[data-theme="light"] .lab-title,
+body[data-theme="light"] .device-name,
+body[data-theme="light"] .cost-value {
+  color: #1a1a1a;
+}
+
+body[data-theme="light"] .status-text,
+body[data-theme="light"] .device-stats {
+  color: #666;
+}
+
+/* Progress Bars */
+body[data-theme="light"] .room-bar-container,
+body[data-theme="light"] .confidence-bar-container,
+body[data-theme="light"] .device-progress {
+  background-color: #e0e0e0;
+}
+
+/* PC Grid */
+body[data-theme="light"] .pc-box {
+  border: 1px solid #d0d0d0;
+}
+
+/* Time Range Selector */
+body[data-theme="light"] .time-range-selector {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+
+body[data-theme="light"] .time-range-selector button {
+  color: #666;
+}
+
+body[data-theme="light"] .time-range-selector button:hover {
+  color: #1a1a1a;
+  background-color: #e8e8e8;
+}
+
+/* Legend */
+body[data-theme="light"] .legend-item {
+  color: #666;
+}
+
+/* Model Info */
+body[data-theme="light"] .model-info {
+  color: #888;
+}
+
+/* Savings Banner */
+body[data-theme="light"] .savings-banner {
+  background: linear-gradient(135deg, rgba(74, 222, 128, 0.1) 0%, rgba(34, 197, 94, 0.1) 100%);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+body[data-theme="light"] .savings-label {
+  color: #666;
+}
+
+/* Cost Item Primary */
+body[data-theme="light"] .cost-item.primary {
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.1) 0%, rgba(234, 179, 8, 0.05) 100%);
+  border-color: rgba(234, 179, 8, 0.3);
+}
+
+/* Modal */
+body[data-theme="light"] .modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme="light"] .modal-content {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border: 1px solid #e0e0e0;
+}
+
+body[data-theme="light"] .modal-header {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+body[data-theme="light"] .modal-header h2 {
+  color: #1a1a1a;
+}
+
+body[data-theme="light"] .close-btn {
+  color: #666;
+}
+
+body[data-theme="light"] .close-btn:hover {
+  background-color: #e8e8e8;
+  color: #1a1a1a;
+}
+
+body[data-theme="light"] .setting-group label {
+  color: #666;
+}
+
+body[data-theme="light"] .setting-group input[type="number"] {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  color: #1a1a1a;
+}
+
+body[data-theme="light"] .setting-group input[type="number"]:focus {
+  border-color: #3b82f6;
+}
+
+body[data-theme="light"] .setting-group.checkbox label {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+
+body[data-theme="light"] .setting-group.checkbox label:hover {
+  border-color: #d0d0d0;
+  background-color: #e8e8e8;
+}
+
+body[data-theme="light"] .setting-group.checkbox span {
+  color: #1a1a1a;
+}
+
+body[data-theme="light"] .modal-footer {
+  border-top: 1px solid #e0e0e0;
+}
+
+body[data-theme="light"] .btn-cancel {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  color: #666;
+}
+
+body[data-theme="light"] .btn-cancel:hover {
+  background-color: #e8e8e8;
+  color: #1a1a1a;
+}
+
+body[data-theme="light"] .modal-body::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+body[data-theme="light"] .modal-body::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+}
+
+body[data-theme="light"] .modal-body::-webkit-scrollbar-thumb:hover {
+  background: #b0b0b0;
+}
+
+/* Loading */
+body[data-theme="light"] .loading {
+  color: #3b82f6;
+}
