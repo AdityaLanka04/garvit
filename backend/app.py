@@ -45,8 +45,10 @@ def generate_chart_data():
         base_load = 5 + random.uniform(0, 3)
         peak_multiplier = 3 + random.uniform(0, 2) if 8 <= i <= 18 else 1
         actual = base_load * peak_multiplier
-        expected = actual * (0.95 + random.uniform(0, 0.1))
-        waste = max(0, actual - expected) * 0.3
+        # Expected should be lower than actual to show waste
+        expected = actual * (0.85 + random.uniform(0, 0.1))
+        # Waste is the difference between actual and expected
+        waste = max(0, actual - expected)
         
         data.append({
             'time': f'{i:02d}:00',

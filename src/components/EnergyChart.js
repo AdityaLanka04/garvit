@@ -37,8 +37,10 @@ function generateMockData() {
     const baseLoad = 5 + Math.random() * 3;
     const peakMultiplier = (i >= 8 && i <= 18) ? 3 + Math.random() * 2 : 1;
     const actual = baseLoad * peakMultiplier;
-    const expected = actual * (0.95 + Math.random() * 0.1);
-    const waste = Math.max(0, actual - expected) * 0.3;
+    // Expected should be lower than actual to show waste
+    const expected = actual * (0.85 + Math.random() * 0.1);
+    // Waste is the difference between actual and expected
+    const waste = Math.max(0, actual - expected);
     
     data.push({
       time: hours[i],

@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import './HistoricalData.css';
 
 const HistoricalData = ({ data }) => {
   const [timeRange, setTimeRange] = useState('7d');
 
-  const historicalData = data || generateHistoricalData(timeRange);
+  // Always generate data based on timeRange, ignore backend data for this component
+  const historicalData = useMemo(() => {
+    return generateHistoricalData(timeRange);
+  }, [timeRange]);
 
   return (
     <div className="historical-container">
@@ -57,7 +60,12 @@ function generateHistoricalData(range) {
     
     let label;
     if (format === 'time') {
-      label = `${i}:00`;
+      label = `${i.toString().padStart(2, '0')}:00`;
+    } else if (range === '7d') {
+      const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+      label = days[i % 7];
+    } else if (range === '30d') {
+      label = `${i + 1}`;
     } else {
       label = `Day ${i + 1}`;
     }
